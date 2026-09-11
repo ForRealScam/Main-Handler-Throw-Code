@@ -1,3 +1,4 @@
+--Connected Discord-GitHub
 -- server side for the poop throw in Poop Throw Obby
 -- ragdoll uses RagdollService by kiy4ku and DataManager uses ProfileStore by loleris
 
@@ -16,7 +17,7 @@ local throwRemote = ReplicatedStorage["Server&Client"].Throw -- client fires thi
 local splatRemote = ReplicatedStorage.Splat -- EffectScript listens here
 local hapticRemote = ReplicatedStorage.PlayHaptic -- SoundHapticPlay listens here
 local propsFolder = workspace.Props
-local dizzyTemplate = ServerStorage.EffectAcc.Dizzy -- cached so no lookup every hit
+local dizzyTemplate = ServerStorage.EffectAcc.Dizzy --cached so no lookup every hit
 
 assert(#Settings.musicList > 0, "SettingsPoopThrow.musicList needs at least one sound id") -- math.random breaks on empty list
 
